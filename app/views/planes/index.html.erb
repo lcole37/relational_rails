@@ -1,0 +1,6 @@
+<h1>Planes</h1>
+<% @plane.each do |plane| %>
+  <h3>Gate: <%= plane.id %></h3>
+  <p>Destination: <%= plane.destination %></p>
+  <p>Boarded? <%= plane.boarded? %></p>
+<% end %>
