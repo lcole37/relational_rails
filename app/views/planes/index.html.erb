@@ -1,7 +1,5 @@
 <h1>Planes</h1>
 <% @plane.each do |plane| %>
   <div>
-  <!-- <a href="/child_table_name/:id">Gate: <%= plane.id %></a>-->
-  <p> <%= plane.id %> <a href='/planes/1'> <%= plane.destination %></a> </p>
-
+  <p>  <%= link_to "#{plane.destination}", "/planes/#{plane.id}" %> </p>
 <% end %>

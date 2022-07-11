@@ -1,5 +1,5 @@
 <h1>Passengers</h1>
 <% @passenger.each do |passenger| %>
-  <a href='/passengers/1'> <%= passenger.name %></a>
   <div>
+  <p>  <%= link_to "#{passenger.name}", "/passengers/#{passenger.id}" %> </p>
 <% end %>

@@ -2,6 +2,5 @@
   <p>ID: <%= @passenger.id %></p>
   <p>Seat Number: <%= @passenger.seat %></p>
   <p>First Class?: <%= @passenger.first_class? %></p>
-  <p>Plane ID: <%= @passenger.plane.id %>
-  <a href='/plane/1'> (<%= @passenger.plane.destination %>)</a>
+  <p> Plane ID: <%= @passenger.plane.id %> <%= link_to "#{@passenger.plane.destination}", "/planes/#{@passenger.plane.id}" %> </p>
   </p>

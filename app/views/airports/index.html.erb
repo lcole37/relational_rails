@@ -1,5 +1,4 @@
 <h1>Airports</h1>
 <% @airport.each do |airport| %>
-  <h3><a href='/airports/1'> <%= airport.name %></a></h3>
-  <!-- <h3><a href='/parents/:id'> <%= airport.name %></a></h3> -->
+  <p>  <%= link_to "#{airport.name}", "/airports/#{airport.id}" %> </p>
 <% end %>
