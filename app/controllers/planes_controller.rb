@@ -4,8 +4,11 @@ class PlanesController < ApplicationController
   end
 
   def show
-    @plane = Plane.all
-    # @plane = Plane.find(params[:id])
+    # @plane = Plane.all
+    # binding.pry
+    @plane = Plane.find(params[:id])
   end
+
+
 
 end

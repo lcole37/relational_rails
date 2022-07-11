@@ -1,7 +1,7 @@
-<h1>Planes</h1>
-<p>Gate: <%= @plane.id %></p>
-
-<p>Destination: <%= @plane.destination %></p>
-<p>Airport: <%= @plane.airport.name %></p>
-<p>Boarded?: <%= @plane.international? %></p>
-<% end %>
+<p>Plane ID: <%= @plane.id%></p>
+<p>Capacity: <%= @plane.capacity%></p>
+<p>Boarded?: <%= @plane.boarded?%></p>
+<p>Destination: <%= @plane.destination%></p>
+<p>Airport ID:
+<a href='/airports/1'> <%= @plane.airport.id %></a>
+</p>
