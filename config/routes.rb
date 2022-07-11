@@ -13,8 +13,4 @@ Rails.application.routes.draw do
     get '/passengers/:id', to:'passengers#show'
 
 
-    # get '/parents/:parent_id/child_table_name', to:''
-    #
-    # get '/parents/:id', to:''
-
 end
