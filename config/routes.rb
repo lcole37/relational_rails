@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-    get '/parents', to:'airports#index'
-    get '/parents/:id', to:'airports#show'
-    get '/child_table_name', to:'planes#index'
-    get '/child_table_name/:id', to:'planes#show'
-    
+
+    get '/', to: 'welcome#index'
+
+    get '/airports', to:'airports#index'
+    get '/airports/:id', to:'airports#show'
+
+    get '/planes', to:'planes#index'
+    get '/planes/:id', to:'planes#show'
+
+    get '/passengers', to:'passengers#index'
+    get '/passengers/:id', to:'passengers#show'
+
+
     # get '/parents/:parent_id/child_table_name', to:''
     #
     # get '/parents/:id', to:''
