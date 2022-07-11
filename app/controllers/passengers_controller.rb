@@ -4,6 +4,6 @@ class PassengersController < ApplicationController
   end
 
   def show
-    @passenger = Passenger.all
+    @passenger = Passenger.find(params[:id])
   end
 end

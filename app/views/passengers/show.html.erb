@@ -1,7 +1,7 @@
-<h1>Passengers</h1>
-<% @passenger.each do |passenger| %>
-  <h3><%= passenger.name %></h3>
-  <p>ID: <%= passenger.id %></p>
-  <p>Seat Number: <%= passenger.seat %></p>
-  <p>First Class?: <%= passenger.first_class? %></p>
-<% end %>
+  <h3><%= @passenger.name %></h3>
+  <p>ID: <%= @passenger.id %></p>
+  <p>Seat Number: <%= @passenger.seat %></p>
+  <p>First Class?: <%= @passenger.first_class? %></p>
+  <p>Plane ID: <%= @passenger.plane.id %>
+  <a href='/plane/1'> (<%= @passenger.plane.destination %>)</a>
+  </p>
