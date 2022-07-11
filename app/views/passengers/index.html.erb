@@ -1,0 +1,5 @@
+<h1>Passengers</h1>
+<% @passenger.each do |passenger| %>
+  <div>
+  <p>  <%= link_to "#{passenger.name}", "/passengers/#{passenger.id}" %> </p>
+<% end %>

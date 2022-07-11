@@ -1,0 +1,5 @@
+<h1>Planes</h1>
+<% @plane.each do |plane| %>
+  <div>
+  <p>  <%= link_to "#{plane.destination}", "/planes/#{plane.id}" %> </p>
+<% end %>

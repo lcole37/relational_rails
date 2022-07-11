@@ -1,0 +1,4 @@
+<h1>Airports</h1>
+<% @airport.each do |airport| %>
+  <p>  <%= link_to "#{airport.name}", "/airports/#{airport.id}" %> </p>
+<% end %>

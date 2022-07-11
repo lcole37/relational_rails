@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-    get '/restaurants', to:'restaurants#index'
+
+    get '/', to: 'welcome#index'
+
+    get '/airports', to:'airports#index'
+    get '/airports/:id', to:'airports#show'
+
+    get '/planes', to:'planes#index'
+    get '/planes/:id', to:'planes#show'
+
+    get '/passengers', to:'passengers#index'
+    get '/passengers/:id', to:'passengers#show'
+
+
 end
