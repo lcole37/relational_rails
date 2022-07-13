@@ -285,8 +285,27 @@
           1,
           null
         ]
+      },
+      "/Users/lucascolwell/turing/2module/projects/relational-rails/app/controllers/airports_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/lucascolwell/turing/2module/projects/relational-rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1657730844
+    "timestamp": 1657738739
   }
 }
