@@ -1,17 +1,22 @@
 require 'rails_helper'
 
 RSpec.describe 'the passengers show page' do
+  before :each do
+    @airport = Airport.create(name: "Denver Airport", gates: 127, international: true)
+    @airport2 = Airport.create(name: "Colorado Springs", gates: 43, international: false)
+
+    @plane = @airport.planes.create(capacity: 150, destination: "SRQ", boarded: true)
+    @plane2 = @airport.planes.create(capacity: 220, destination: "ORD", boarded: false)
+    @plane3 = @airport2.planes.create(capacity: 120, destination: "JFK", boarded: true)
+
+    @passenger = plane.passenger.create(name: "Gary", seat_number: 7, first_class: false)
+    @passenger2 = plane.passenger.create(name: "Sherri", seat_number: 1, first_class: true)
+  end
+
   it "displays passenger name" do
-    passenger = Passenger.create(name: "John", seat: 127, first_class: false)
-    plane = Plane.create(capacity: 150, destination: "SRQ", boarded: true)
-    visit "/parents/#{passenger.id}"
+    visit "/passengers/#{passenger.id}"
 
     expect(page).to have_content(passenger.name)
     expect(page).to_not have_content(passenger2.name)
   end
-
-  it "displays the number of gates in the passenger" do
-
-  end
-
 end

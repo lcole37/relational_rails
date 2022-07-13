@@ -242,13 +242,17 @@
         "lines": [
           1,
           null,
+          null,
           1,
-          1,
+          null,
           1,
           1,
           null,
+          1,
+          1,
           null,
-          null,
+          1,
+          1,
           null,
           null,
           null
@@ -274,15 +278,23 @@
           null
         ]
       },
+      "/Users/lucascolwell/turing/2module/projects/relational-rails/app/models/plane.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/lucascolwell/turing/2module/projects/relational-rails/app/controllers/airports_controller.rb": {
         "lines": [
           1,
           1,
-          0,
+          1,
           null,
           null,
           1,
-          1,
+          4,
           null,
           null
         ]
@@ -294,6 +306,6 @@
         ]
       }
     },
-    "timestamp": 1657491988
+    "timestamp": 1657738739
   }
 }
