@@ -1,5 +1,6 @@
 <h1><%= @airport.name %></h1>
-
 <p>Gates: <%= @airport.gates %></p>
 <p>International? <%= @airport.international? %></p>
-<p>Total planes: <%= @airport.planes.count %></p>
+<%= link_to "Total Planes: #{@airport.planes.count}", "/airports/:airport_id/planes" %>
+<div>
+<h3> <%= link_to "Return to Airports Index", "/airports" %> </h3>
