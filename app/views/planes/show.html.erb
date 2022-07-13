@@ -3,7 +3,6 @@
 <p>Boarded?: <%= @plane.boarded?%></p>
 <p>Destination: <%= @plane.destination%></p>
 <p>(Departing) Airport ID: <%= @plane.airport.id %>
-
 <%= link_to "#{@plane.airport.name}", "/airports/#{@plane.airport.id}" %> </p>
 </p>
 <p>Total Passengers: <%= @plane.passengers.count%></p>
